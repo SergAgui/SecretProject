@@ -1,0 +1,6 @@
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\GroupApp.csprojAssemblyReference.cache
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\GroupApp.csproj.CoreCompileInputs.cache
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\GroupApp.RazorAssemblyInfo.cache
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\GroupApp.RazorAssemblyInfo.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\GroupApp.AssemblyInfoInputs.cache
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\GroupApp.AssemblyInfo.cs
