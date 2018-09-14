@@ -11500,23 +11500,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ponce\\.nuget\\packages\\": {},
+    "C:\\Users\\bryannabrueggman\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ponce\\Desktop\\GroupProject\\SecretProject\\GroupApp\\GroupApp.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Desktop\\SecretProject\\GroupApp\\GroupApp.csproj",
       "projectName": "GroupApp",
-      "projectPath": "C:\\Users\\ponce\\Desktop\\GroupProject\\SecretProject\\GroupApp\\GroupApp.csproj",
-      "packagesPath": "C:\\Users\\ponce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ponce\\Desktop\\GroupProject\\SecretProject\\GroupApp\\obj\\",
+      "projectPath": "\\\\Mac\\Home\\Desktop\\SecretProject\\GroupApp\\GroupApp.csproj",
+      "packagesPath": "C:\\Users\\bryannabrueggman\\.nuget\\packages\\",
+      "outputPath": "\\\\Mac\\Home\\Desktop\\SecretProject\\GroupApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ponce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bryannabrueggman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
