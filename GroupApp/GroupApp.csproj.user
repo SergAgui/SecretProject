@@ -15,6 +15,15 @@
 >>>>>>> 63b4c4d10fc2caec988ed796e7c97b09b8f69549
 =======
     <WebStackScaffolding_LayoutPageFile>~/Views/Shared/_Layout.cshtml</WebStackScaffolding_LayoutPageFile>
+<<<<<<< HEAD
 >>>>>>> 066f312505974b24481a7229b54e897a3c73afcc
+=======
+    <WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
+    <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
+    <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
+    <WebStackScaffolding_DbContextTypeFullName>GroupApp.Models.SouthLocationsContext</WebStackScaffolding_DbContextTypeFullName>
+    <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+>>>>>>> 292fbc426e8d1d4f2e9323876c94981da1901f7b
   </PropertyGroup>
 </Project>
