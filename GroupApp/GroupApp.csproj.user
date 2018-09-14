@@ -1,29 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ActiveDebugProfile>GroupApp</ActiveDebugProfile>
-<<<<<<< HEAD
-=======
-    <_SelectedScaffolderID>MvcControllerWithContextScaffolder</_SelectedScaffolderID>
-    <_SelectedScaffolderCategoryPath>root/Common</_SelectedScaffolderCategoryPath>
-    <WebStackScaffolding_ControllerDialogWidth>600</WebStackScaffolding_ControllerDialogWidth>
-    <WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
-<<<<<<< HEAD
->>>>>>> 63b4c4d10fc2caec988ed796e7c97b09b8f69549
-=======
-    <WebStackScaffolding_LayoutPageFile>~/Views/Shared/_Layout.cshtml</WebStackScaffolding_LayoutPageFile>
-<<<<<<< HEAD
->>>>>>> 066f312505974b24481a7229b54e897a3c73afcc
-=======
-    <WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
-    <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
-    <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
-    <WebStackScaffolding_DbContextTypeFullName>GroupApp.Models.SouthLocationsContext</WebStackScaffolding_DbContextTypeFullName>
-    <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
-    <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
->>>>>>> 292fbc426e8d1d4f2e9323876c94981da1901f7b
-  </PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+<DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+</PropertyGroup>
+<PropertyGroup>
+<ActiveDebugProfile>GroupApp</ActiveDebugProfile>
+<_SelectedScaffolderID>MvcControllerWithContextScaffolder</_SelectedScaffolderID>
+<_SelectedScaffolderCategoryPath>root/Common</_SelectedScaffolderCategoryPath>
+<WebStackScaffolding_ControllerDialogWidth>600</WebStackScaffolding_ControllerDialogWidth>
+<WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
+<WebStackScaffolding_LayoutPageFile>~/Views/Shared/_Layout.cshtml</WebStackScaffolding_LayoutPageFile>
+<WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
+<WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
+<WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
+<WebStackScaffolding_DbContextTypeFullName>GroupApp.Models.SouthLocationsContext</WebStackScaffolding_DbContextTypeFullName>
+<WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+<WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+</PropertyGroup>
 </Project>
