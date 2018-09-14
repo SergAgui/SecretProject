@@ -11,10 +11,10 @@ jobs:
           command: pwd
       - run:
           name: Restore packages for all projects in solution
-          command: dotnet restore /GroupProject/SecretProject
+          command: dotnet restore 
       - run:
           name: Build all projects in solution
-          command: dotnet build GroupProject/SecretProject
+          command: dotnet build 
      # - run:
      #    name: Run tests in test project
      #   command: dotnet test GroupProject/
