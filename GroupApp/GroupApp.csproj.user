@@ -5,5 +5,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>GroupApp</ActiveDebugProfile>
+<<<<<<< HEAD
+=======
+    <_SelectedScaffolderID>MvcControllerWithContextScaffolder</_SelectedScaffolderID>
+    <_SelectedScaffolderCategoryPath>root/Common</_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_ControllerDialogWidth>600</WebStackScaffolding_ControllerDialogWidth>
+    <WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
+>>>>>>> 63b4c4d10fc2caec988ed796e7c97b09b8f69549
   </PropertyGroup>
 </Project>
