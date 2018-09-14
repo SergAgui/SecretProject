@@ -11,6 +11,10 @@
     <_SelectedScaffolderCategoryPath>root/Common</_SelectedScaffolderCategoryPath>
     <WebStackScaffolding_ControllerDialogWidth>600</WebStackScaffolding_ControllerDialogWidth>
     <WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
+<<<<<<< HEAD
 >>>>>>> 63b4c4d10fc2caec988ed796e7c97b09b8f69549
+=======
+    <WebStackScaffolding_LayoutPageFile>~/Views/Shared/_Layout.cshtml</WebStackScaffolding_LayoutPageFile>
+>>>>>>> 066f312505974b24481a7229b54e897a3c73afcc
   </PropertyGroup>
 </Project>
