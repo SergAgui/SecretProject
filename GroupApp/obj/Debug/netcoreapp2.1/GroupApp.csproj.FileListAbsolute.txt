@@ -44,3 +44,4 @@ C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2
 C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\SouthLocations\Details.g.cshtml.cs
 C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\SouthLocations\Edit.g.cshtml.cs
 C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\SouthLocations\Index.g.cshtml.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\UserProfile\UserProfile.g.cshtml.cs
