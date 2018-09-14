@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: microsoft/dotnet:2.1-sdk
-    working_directory: ~/Final/SecretProject
+    working_directory: ~/FinalProject/SecretProject
     steps:
       - checkout
       - run: 
