@@ -15,6 +15,6 @@ jobs:
       - run:
           name: Build all projects in solution
           command: dotnet build 
-       - run:
+      - run:
           name: Run tests in test project
           command: dotnet test GroupAppTest/GroupAppTest.csproj
