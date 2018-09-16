@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using GroupApp.Models;
 
 namespace GroupApp
 {
@@ -32,6 +34,15 @@ namespace GroupApp
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<CentralLocationsContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("CentralLocationsContext")));
+
+            services.AddDbContext<NorthLocationsContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("NorthLocationsContext")));
+
+            services.AddDbContext<SouthLocationsContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("SouthLocationsContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
