@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sergio A\\Desktop\\Final\\SecretProject\\GroupApp\\GroupApp.csproj",
+      "projectUniqueName": "C:\\Users\\Sergio A\\Documents\\GitHub\\SecretProject\\GroupApp\\GroupApp.csproj",
       "projectName": "GroupApp",
-      "projectPath": "C:\\Users\\Sergio A\\Desktop\\Final\\SecretProject\\GroupApp\\GroupApp.csproj",
+      "projectPath": "C:\\Users\\Sergio A\\Documents\\GitHub\\SecretProject\\GroupApp\\GroupApp.csproj",
       "packagesPath": "C:\\Users\\Sergio A\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sergio A\\Desktop\\Final\\SecretProject\\GroupApp\\obj\\",
+      "outputPath": "C:\\Users\\Sergio A\\Documents\\GitHub\\SecretProject\\GroupApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
