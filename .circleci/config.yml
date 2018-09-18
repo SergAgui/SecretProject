@@ -3,8 +3,7 @@ jobs:
   build:
     docker:
       - image: microsoft/dotnet:2.1-sdk
-<<<<<<< HEAD
-    working_directory: ~/SecretPorject
+    working_directory: ~/SecretProject
     steps:
       - checkout
       -run:
@@ -16,10 +15,7 @@ jobs:
       - run:
           name: Build all projects in solution
           command: dotnet build SecretProject
-      # - run:
-      #     name: Run tests in test project
-      #     command: dotnet test Lesson08/StartOfLesson/BaseProject.Test/BaseProject.Test.csproj
-=======
+
     working_directory: ~/Final/SecretProject
     steps:
       - checkout
@@ -35,4 +31,3 @@ jobs:
      # - run:
      #    name: Run tests in test project
      #   command: dotnet test GroupProject/
->>>>>>> ab4bd923d16912870091ebf1cb1432ef2513143e
