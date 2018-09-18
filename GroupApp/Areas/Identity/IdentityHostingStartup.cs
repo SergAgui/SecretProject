@@ -17,7 +17,7 @@ namespace GroupApp.Areas.Identity
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<UserIdentityContext>(options =>
                     options.UseSqlServer(
-                        context.Configuration.GetConnectionString("UserIdentityContextConnection")));
+                        context.Configuration.GetConnectionString("GroupAppDb")));
 
                 services.AddDefaultIdentity<IdentityUser>()
                     .AddEntityFrameworkStores<UserIdentityContext>();
