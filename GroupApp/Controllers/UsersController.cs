@@ -9,24 +9,22 @@ using GroupApp.Models;
 
 namespace GroupApp.Controllers
 {
-    public class NorthLocationsController : Controller
+    public class UsersController : Controller
     {
-
         private readonly GroupAppContext _context;
 
-        public NorthLocationsController(GroupAppContext context)
-
+        public UsersController(GroupAppContext context)
         {
             _context = context;
         }
 
-        // GET: NorthLocations
+        // GET: Users
         public async Task<IActionResult> Index()
         {
-            return View(await _context.NorthLocations.ToListAsync());
+            return View(await _context.User.ToListAsync());
         }
 
-        // GET: NorthLocations/Details/5
+        // GET: Users/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,39 +32,39 @@ namespace GroupApp.Controllers
                 return NotFound();
             }
 
-            var northLocations = await _context.NorthLocations
+            var user = await _context.User
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (northLocations == null)
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return View(northLocations);
+            return View(user);
         }
 
-        // GET: NorthLocations/Create
+        // GET: Users/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: NorthLocations/Create
+        // POST: Users/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Address")] NorthLocations northLocations)
+        public async Task<IActionResult> Create([Bind("Id,First,Last,Age")] User user)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(northLocations);
+                _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(northLocations);
+            return View(user);
         }
 
-        // GET: NorthLocations/Edit/5
+        // GET: Users/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -74,22 +72,22 @@ namespace GroupApp.Controllers
                 return NotFound();
             }
 
-            var northLocations = await _context.NorthLocations.FindAsync(id);
-            if (northLocations == null)
+            var user = await _context.User.FindAsync(id);
+            if (user == null)
             {
                 return NotFound();
             }
-            return View(northLocations);
+            return View(user);
         }
 
-        // POST: NorthLocations/Edit/5
+        // POST: Users/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Address")] NorthLocations northLocations)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,First,Last,Age")] User user)
         {
-            if (id != northLocations.Id)
+            if (id != user.Id)
             {
                 return NotFound();
             }
@@ -98,12 +96,12 @@ namespace GroupApp.Controllers
             {
                 try
                 {
-                    _context.Update(northLocations);
+                    _context.Update(user);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!NorthLocationsExists(northLocations.Id))
+                    if (!UserExists(user.Id))
                     {
                         return NotFound();
                     }
@@ -114,10 +112,10 @@ namespace GroupApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(northLocations);
+            return View(user);
         }
 
-        // GET: NorthLocations/Delete/5
+        // GET: Users/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -125,30 +123,30 @@ namespace GroupApp.Controllers
                 return NotFound();
             }
 
-            var northLocations = await _context.NorthLocations
+            var user = await _context.User
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (northLocations == null)
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return View(northLocations);
+            return View(user);
         }
 
-        // POST: NorthLocations/Delete/5
+        // POST: Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var northLocations = await _context.NorthLocations.FindAsync(id);
-            _context.NorthLocations.Remove(northLocations);
+            var user = await _context.User.FindAsync(id);
+            _context.User.Remove(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool NorthLocationsExists(int id)
+        private bool UserExists(int id)
         {
-            return _context.NorthLocations.Any(e => e.Id == id);
+            return _context.User.Any(e => e.Id == id);
         }
     }
 }

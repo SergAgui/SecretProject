@@ -11,9 +11,13 @@ namespace GroupApp.Controllers
 {
     public class SouthLocationsController : Controller
     {
+
         private readonly GroupAppContext _context;
 
+ 
+
         public SouthLocationsController(GroupAppContext context)
+
         {
             _context = context;
         }
