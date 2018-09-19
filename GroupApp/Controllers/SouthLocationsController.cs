@@ -11,9 +11,9 @@ namespace GroupApp.Controllers
 {
     public class SouthLocationsController : Controller
     {
-        private readonly SouthLocationsContext _context;
+        private readonly Locations _context;
 
-        public SouthLocationsController(SouthLocationsContext context)
+        public SouthLocationsController(Locations context)
         {
             _context = context;
         }
@@ -21,7 +21,7 @@ namespace GroupApp.Controllers
         // GET: SouthLocations
         public async Task<IActionResult> Index()
         {
-            return View(await _context.SouthLocations.ToListAsync());
+            return View(await _context.SouthLocations.Include(( X ) => X.SouthLocations).ToListAsync());
         }
 
         // GET: SouthLocations/Details/5
