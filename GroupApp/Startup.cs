@@ -35,14 +35,18 @@ namespace GroupApp
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            var dbConfig = Configuration.Get<Class>();
+            var connection = Configuration.GetConnectionString("GroupAppDb");
+            var format = string.Format(connection, dbConfig.User, dbConfig.Pass);
             services.AddDbContext<GroupAppContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("GroupAppDb")));
+                    options.UseSqlServer(format));
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            EnsureDatabaseUpdated(app);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -62,6 +66,17 @@ namespace GroupApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+        private void EnsureDatabaseUpdated(IApplicationBuilder app)
+        {
+            var scopeFactory = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>();
+            using (var serviceScope = scopeFactory.CreateScope())
+            {
+                using (var context = serviceScope.ServiceProvider.GetService<GroupAppContext>())
+                {
+                    context.Database.Migrate();
+                }
+            }
         }
     }
 }

@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>5a73f707-090f-49c4-a85e-3a0eeaed8d71</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,7 +12,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Identity\Services\" />
-    <Folder Include="GroupApp\" />
   </ItemGroup>
 
 </Project>

@@ -12,6 +12,10 @@ namespace GroupApp.Models
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
 
         public DbSet<CentralLocations> CentralLocations { get; set; }
         public DbSet<NorthLocations> NorthLocations { get; set; }
