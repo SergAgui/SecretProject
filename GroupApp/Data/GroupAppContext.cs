@@ -16,5 +16,6 @@ namespace GroupApp.Models
         public DbSet<CentralLocations> CentralLocations { get; set; }
         public DbSet<NorthLocations> NorthLocations { get; set; }
         public DbSet<SouthLocations> SouthLocations { get; set; }
+        public DbSet<User> User { get; set; }
     }
 }

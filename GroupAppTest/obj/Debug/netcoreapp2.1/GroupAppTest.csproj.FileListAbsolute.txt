@@ -1,0 +1,14 @@
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.deps.json
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.runtimeconfig.json
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.runtimeconfig.dev.json
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.dll
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.pdb
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.csprojAssemblyReference.cache
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.csproj.CoreCompileInputs.cache
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.AssemblyInfoInputs.cache
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.AssemblyInfo.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.dll
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.pdb
