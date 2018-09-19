@@ -35,8 +35,13 @@ namespace GroupApp
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+<<<<<<< HEAD
             services.AddDbContext<LocationsContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("CentralLocationsContext")));
+=======
+            services.AddDbContext<GroupAppContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("GroupAppDb")));
+>>>>>>> 165a6538086c9f4bc4060b0940d91e011415ac8a
 
         }
 
@@ -54,6 +59,7 @@ namespace GroupApp
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
