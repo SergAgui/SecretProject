@@ -45,3 +45,11 @@ C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2
 C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\SouthLocations\Edit.g.cshtml.cs
 C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\SouthLocations\Index.g.cshtml.cs
 C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\UserProfile\UserProfile.g.cshtml.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\Users\Create.g.cshtml.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\Users\Delete.g.cshtml.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.g.cshtml.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.g.cshtml.cs
+C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupApp\obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.g.cshtml.cs
