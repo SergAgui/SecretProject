@@ -14,7 +14,7 @@ namespace GroupApp.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
+                .HasAnnotation("ProductVersion", "2.1.3-rtm-32065")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -26,7 +26,13 @@ namespace GroupApp.Migrations
 
                     b.Property<string>("Address");
 
+                    b.Property<string>("Establishment");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -41,7 +47,13 @@ namespace GroupApp.Migrations
 
                     b.Property<string>("Address");
 
+                    b.Property<string>("Establishment");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -56,7 +68,13 @@ namespace GroupApp.Migrations
 
                     b.Property<string>("Address");
 
+                    b.Property<string>("Establishment");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 

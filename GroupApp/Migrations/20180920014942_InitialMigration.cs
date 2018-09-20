@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GroupApp.Migrations
 {
-    public partial class AddedUsers : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,10 @@ namespace GroupApp.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
-                    Address = table.Column<string>(nullable: true)
+                    Establishment = table.Column<string>(nullable: true),
+                    Address = table.Column<string>(nullable: true),
+                    Time = table.Column<string>(nullable: true),
+                    Thoughts = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -28,7 +31,10 @@ namespace GroupApp.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
-                    Address = table.Column<string>(nullable: true)
+                    Establishment = table.Column<string>(nullable: true),
+                    Address = table.Column<string>(nullable: true),
+                    Time = table.Column<string>(nullable: true),
+                    Thoughts = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -42,7 +48,10 @@ namespace GroupApp.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
-                    Address = table.Column<string>(nullable: true)
+                    Establishment = table.Column<string>(nullable: true),
+                    Address = table.Column<string>(nullable: true),
+                    Time = table.Column<string>(nullable: true),
+                    Thoughts = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
