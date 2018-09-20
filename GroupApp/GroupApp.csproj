@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\Friendzone.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
@@ -14,6 +18,10 @@
   <ItemGroup>
     <Folder Include="Areas\Identity\Services\" />
     <Folder Include="GroupApp\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\Friendzone.jpg" />
   </ItemGroup>
 
 </Project>
