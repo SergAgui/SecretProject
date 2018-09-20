@@ -14,8 +14,8 @@ jobs:
            command: ls
       - run:
           name: Restore packages for all projects in solution
-          command: dotnet restore GroupApp   
+          command: dotnet restore   
       - run:
           name: Build all projects in solution
-          command: dotnet build GroupApp
+          command: dotnet build 
     
