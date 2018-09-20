@@ -104,14 +104,6 @@ namespace GroupApp.Migrations
 
                     b.ToTable("User");
                 });
-<<<<<<< HEAD
-<<<<<<< HEAD
-#pragma warning restore 612, 618
-=======
->>>>>>> 5a962318bebdb35613e0dad76ae9ab313830851e
-=======
-#pragma warning restore 612, 618
->>>>>>> e63b2fa16d5d44de126caf0a05d43630297b33ff
         }
     }
 }
