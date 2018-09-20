@@ -6,12 +6,7 @@ jobs:
     working_directory: ~/SecretProject
     steps:
       - checkout
-      - run:
-          name: Debug location
-          command: pwd
-      - run:
-           name: print directory
-           command: ls
+
       - run:
           name: Restore packages for all projects in solution
           command: dotnet restore   
