@@ -1,35 +1,57 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - GroupApp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px, Abril FatFace, cursive;
+            line-height: 1.8;
+            color: #f5f6f7;
+            background-color: dimgrey;
+        }
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+        p {
+            font-size: 16px;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        .navbar {
+            background-color: black;
+            width: 100%;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 15px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav li a:hover {
+            color: red !important;
+        }
+
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">GroupApp</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a asp-area="Home" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="CentralLocations" asp-controller="CentralLocations" asp-action="Index">Central Locations</a></li>
                     <li><a asp-area="NorthLocations" asp-controller="NorthLocations" asp-action="Index">North Location</a></li>
                     <li><a asp-area="SouthLocations" asp-controller="SouthLocations" asp-action="Index">South Location</a></li>
@@ -39,15 +61,11 @@
             </div>
         </div>
     </nav>
-
-    <partial name="_CookieConsentPartial" />
-    <partial name="_LoginPartial" />
-
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - GroupApp</p>
+            <p>&copy; 2018 - FriendZone</p>
         </footer>
     </div>
 
@@ -73,5 +91,6 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>
