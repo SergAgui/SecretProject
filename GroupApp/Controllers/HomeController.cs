@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using GroupApp.Models;
 
 namespace GroupApp.Controllers
 {
@@ -15,16 +10,18 @@ namespace GroupApp.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Welcome To Friend Zone";
 
             return View();
         }
 
+        [AllowAnonymous]
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Break the Code Monkeys a Banana";
 
             return View();
         }

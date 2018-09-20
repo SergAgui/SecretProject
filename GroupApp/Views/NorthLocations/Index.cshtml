@@ -5,11 +5,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+    <img src="~/images/NorthAustinPicture.png" alt="ASP.NET" class="img-responsive" />
+</div>
+<div>
+    <p>
+        <h4> <a asp-action="Create">Add New Invite</a></h4>
+    </p>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -38,20 +42,21 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayNameFor(model => model.Name)
+                    @item.Name
                 </td>
                 <td>
-                    @Html.DisplayNameFor(model => model.Establishment)
+                    @item.Establishment
                 </td>
                 <td>
-                    @Html.DisplayNameFor(model => model.Address)
+                    @item.Address
                 </td>
 
                 <td>
-                    @Html.DisplayNameFor(model => model.DateTime)
+                    @item.DateTime
                 </td>
+
                 <td>
-                    @Html.DisplayNameFor(model => model.Thoughts)
+                    @item.Thoughts
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

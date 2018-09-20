@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace GroupApp.Models
 {
     public class GroupAppContext : DbContext
     {
-        public GroupAppContext (DbContextOptions<GroupAppContext> options) : base(options)
+        public GroupAppContext(DbContextOptions<GroupAppContext> options) : base(options)
         {
-
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {

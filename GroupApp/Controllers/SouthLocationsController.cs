@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using GroupApp.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GroupApp.Controllers
 {
     public class SouthLocationsController : Controller
     {
-
         private readonly GroupAppContext _context;
-
- 
 
         public SouthLocationsController(GroupAppContext context)
 
@@ -23,6 +18,7 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.SouthLocations.ToListAsync());
@@ -47,16 +43,18 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Create
+        //[Authorize]
+        //[ValidateAntiForgeryToken]
         public IActionResult Create()
         {
             return View();
         }
 
         // POST: SouthLocations/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Establishment,Address,DateTime,Thoughts")] SouthLocations southLocations)
         {
             if (ModelState.IsValid)
@@ -69,6 +67,8 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Edit/5
+        //[Authorize]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -85,10 +85,10 @@ namespace GroupApp.Controllers
         }
 
         // POST: SouthLocations/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Establishment,Address,DateTime,Thoughts")] SouthLocations southLocations)
         {
             if (id != southLocations.Id)
@@ -120,6 +120,8 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Delete/5
+        //[Authorize]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -139,7 +141,7 @@ namespace GroupApp.Controllers
 
         // POST: SouthLocations/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var southLocations = await _context.SouthLocations.FindAsync(id);
