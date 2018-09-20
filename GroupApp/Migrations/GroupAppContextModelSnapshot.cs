@@ -62,8 +62,6 @@ namespace GroupApp.Migrations
 
                     b.ToTable("SouthLocations");
                 });
-<<<<<<< HEAD
-=======
 
             modelBuilder.Entity("GroupApp.Models.User", b =>
                 {
@@ -81,8 +79,6 @@ namespace GroupApp.Migrations
 
                     b.ToTable("User");
                 });
->>>>>>> dcbc286de2ed7d62bab624f7b08f06612ae2dc9a
-#pragma warning restore 612, 618
         }
     }
 }
