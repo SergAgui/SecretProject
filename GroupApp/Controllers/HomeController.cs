@@ -20,7 +20,6 @@ namespace GroupApp.Controllers
         [AllowAnonymous]
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
             ViewData["Message"] = "Welcome To Friend Zone";
 
             return View();
@@ -29,7 +28,6 @@ namespace GroupApp.Controllers
         [AllowAnonymous]
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
             ViewData["Message"] = "Break the Code Monkeys a bannana";
 
             return View();
