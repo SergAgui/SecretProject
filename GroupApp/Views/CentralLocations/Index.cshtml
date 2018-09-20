@@ -5,11 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div>
-
-    <img src="~/images/CentralAustinPicture.png" alt="ASP.NET" class="img-responsive" />
-
-</div>
+<h2>Central Austin</h2>
 
 <p>
     <a asp-action="Create">Add New Invite</a>
@@ -42,21 +38,21 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayNameFor(model => model.Name)
+                @item.Name
             </td>
             <td>
-                @Html.DisplayNameFor(model => model.Establishment)
+                @item.Establishment
             </td>
             <td>
-                @Html.DisplayNameFor(model => model.Address)
-            </td>
-
-            <td>
-                @Html.DisplayNameFor(model => model.DateTime)
+                @item.Address
             </td>
 
             <td>
-                @Html.DisplayNameFor(model => model.Thoughts)
+                @item.DateTime
+            </td>
+
+            <td>
+                @item.Thoughts
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
