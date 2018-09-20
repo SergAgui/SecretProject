@@ -2,10 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+<<<<<<< HEAD
     <UserSecretsId>5a73f707-090f-49c4-a85e-3a0eeaed8d71</UserSecretsId>
+=======
+    <UserSecretsId>06ddf010-4c90-4088-a89d-c32c600b28ac</UserSecretsId>
+>>>>>>> 5a962318bebdb35613e0dad76ae9ab313830851e
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>

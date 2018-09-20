@@ -3,14 +3,16 @@ using GroupApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GroupApp.Migrations
 {
     [DbContext(typeof(GroupAppContext))]
-    partial class GroupAppContextModelSnapshot : ModelSnapshot
+    [Migration("20180919011817_GroupApp")]
+    partial class GroupApp
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,27 +64,7 @@ namespace GroupApp.Migrations
 
                     b.ToTable("SouthLocations");
                 });
-
-            modelBuilder.Entity("GroupApp.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("Age");
-
-                    b.Property<string>("First");
-
-                    b.Property<string>("Last");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("User");
-                });
-<<<<<<< HEAD
 #pragma warning restore 612, 618
-=======
->>>>>>> 5a962318bebdb35613e0dad76ae9ab313830851e
         }
     }
 }

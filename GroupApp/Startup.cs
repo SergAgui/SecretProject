@@ -22,6 +22,8 @@ namespace GroupApp
 
         public IConfiguration Configuration { get; }
 
+
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -34,6 +36,13 @@ namespace GroupApp
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            var Dbconfig = Configuration.Get<DBconfigClass>();
+            var connectionstring = Configuration.GetConnectionString("GroupAppDb");
+            var format = string.Format(connectionstring, Dbconfig.Username, Dbconfig.Password);
+
+ 
+            //services.AddDbContext<GroupAppContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("CentralLocationsContext")));
 
             var dbConfig = Configuration.Get<Class>();
             var connection = Configuration.GetConnectionString("GroupAppDb");
@@ -66,6 +75,22 @@ namespace GroupApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+        }
+        private void EnsureDatabaseUpdated(IApplicationBuilder app)
+        {
+            var scopeFactory = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>();
+            using (var serviceScope = scopeFactory.CreateScope())
+            {
+                using (var context = serviceScope.ServiceProvider.GetService<GroupAppContext>())
+                {
+                    context.Database.Migrate();
+                }
+                using (var context = serviceScope.ServiceProvider.GetService<UserIdentityContext>())
+                {
+                    context.Database.Migrate();
+                }
+            }
         }
         private void EnsureDatabaseUpdated(IApplicationBuilder app)
         {
