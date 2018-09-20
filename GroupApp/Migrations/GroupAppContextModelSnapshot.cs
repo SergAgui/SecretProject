@@ -26,7 +26,13 @@ namespace GroupApp.Migrations
 
                     b.Property<string>("Address");
 
+                    b.Property<string>("Establishment");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -41,7 +47,13 @@ namespace GroupApp.Migrations
 
                     b.Property<string>("Address");
 
+                    b.Property<string>("Establishment");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -56,7 +68,13 @@ namespace GroupApp.Migrations
 
                     b.Property<string>("Address");
 
+                    b.Property<string>("Establishment");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -79,6 +97,7 @@ namespace GroupApp.Migrations
 
                     b.ToTable("User");
                 });
+#pragma warning restore 612, 618
         }
     }
 }

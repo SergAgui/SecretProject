@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GroupApp.Migrations
 {
-    public partial class GroupApp : Migration
+    public partial class Friendzone : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,10 @@ namespace GroupApp.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
-                    Address = table.Column<string>(nullable: true)
+                    Establishment = table.Column<string>(nullable: true),
+                    Address = table.Column<string>(nullable: true),
+                    Time = table.Column<string>(nullable: true),
+                    Thoughts = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -28,7 +31,10 @@ namespace GroupApp.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
-                    Address = table.Column<string>(nullable: true)
+                    Establishment = table.Column<string>(nullable: true),
+                    Address = table.Column<string>(nullable: true),
+                    Time = table.Column<string>(nullable: true),
+                    Thoughts = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -42,11 +48,29 @@ namespace GroupApp.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
-                    Address = table.Column<string>(nullable: true)
+                    Establishment = table.Column<string>(nullable: true),
+                    Address = table.Column<string>(nullable: true),
+                    Time = table.Column<string>(nullable: true),
+                    Thoughts = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_SouthLocations", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "User",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    First = table.Column<string>(nullable: true),
+                    Last = table.Column<string>(nullable: true),
+                    Age = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_User", x => x.Id);
                 });
         }
 
@@ -60,6 +84,9 @@ namespace GroupApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "SouthLocations");
+
+            migrationBuilder.DropTable(
+                name: "User");
         }
     }
 }
