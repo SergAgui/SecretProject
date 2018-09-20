@@ -9,6 +9,11 @@ namespace GroupApp.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Establishment { get; set; }
         public string Address { get; set; }
+        public string Time { get; set; }
+        public string Thoughts { get; set; }
+
+
     }
 }
