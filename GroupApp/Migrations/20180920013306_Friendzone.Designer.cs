@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GroupApp.Migrations
 {
     [DbContext(typeof(GroupAppContext))]
-    [Migration("20180919011817_GroupApp")]
-    partial class GroupApp
+    [Migration("20180920013306_Friendzone")]
+    partial class Friendzone
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,7 +28,13 @@ namespace GroupApp.Migrations
 
                     b.Property<string>("Address");
 
+                    b.Property<string>("Establishment");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -43,7 +49,13 @@ namespace GroupApp.Migrations
 
                     b.Property<string>("Address");
 
+                    b.Property<string>("Establishment");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -58,11 +70,34 @@ namespace GroupApp.Migrations
 
                     b.Property<string>("Address");
 
+                    b.Property<string>("Establishment");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
                     b.ToTable("SouthLocations");
+                });
+
+            modelBuilder.Entity("GroupApp.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Age");
+
+                    b.Property<string>("First");
+
+                    b.Property<string>("Last");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("User");
                 });
 #pragma warning restore 612, 618
         }

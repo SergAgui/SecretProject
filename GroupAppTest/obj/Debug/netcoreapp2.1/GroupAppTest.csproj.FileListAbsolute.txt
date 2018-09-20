@@ -12,3 +12,17 @@ C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcore
 C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.AssemblyInfo.cs
 C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.dll
 C:\Users\ponce\Desktop\GroupProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.pdb
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.deps.json
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.runtimeconfig.json
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.runtimeconfig.dev.json
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.dll
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\bin\Debug\netcoreapp2.1\GroupAppTest.pdb
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.AssemblyInfo.cs
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.dll
+\\Mac\Home\Desktop\FinalProject\SecretProject\GroupAppTest\obj\Debug\netcoreapp2.1\GroupAppTest.pdb
