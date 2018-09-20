@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using GroupApp.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
-using GroupApp.Models;
 
 namespace GroupApp
 {
@@ -22,8 +18,6 @@ namespace GroupApp
 
         public IConfiguration Configuration { get; }
 
-
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -34,19 +28,16 @@ namespace GroupApp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             var Dbconfig = Configuration.Get<DBconfigClass>();
             var connectionstring = Configuration.GetConnectionString("GroupAppDb");
             var format = string.Format(connectionstring, Dbconfig.Username, Dbconfig.Password);
 
- 
             //services.AddDbContext<GroupAppContext>(options =>
             //        options.UseSqlServer(Configuration.GetConnectionString("CentralLocationsContext")));
 
             services.AddDbContext<GroupAppContext>(options =>
                     options.UseSqlServer(format));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,8 +63,8 @@ namespace GroupApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-
         }
+
         private void EnsureDatabaseUpdated(IApplicationBuilder app)
         {
             var scopeFactory = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>();

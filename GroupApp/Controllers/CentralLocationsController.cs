@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using GroupApp.Models;
-using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GroupApp.Controllers
 {
     public class CentralLocationsController : Controller
     {
-
         private readonly GroupAppContext _context;
-        
-        public CentralLocationsController(GroupAppContext context)
 
-      
+        public CentralLocationsController(GroupAppContext context)
 
         {
             _context = context;
@@ -28,7 +21,7 @@ namespace GroupApp.Controllers
         {
             return View(await _context.CentralLocations.ToListAsync());
         }
-        
+
         // GET: CentralLocations/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -56,7 +49,7 @@ namespace GroupApp.Controllers
         }
 
         // POST: CentralLocations/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         //[Authorize]
         [HttpPost]
@@ -91,7 +84,7 @@ namespace GroupApp.Controllers
         }
 
         // POST: CentralLocations/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         //[Authorize]
         [HttpPost]
