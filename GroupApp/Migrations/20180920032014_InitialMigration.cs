@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GroupApp.Migrations
@@ -17,7 +18,8 @@ namespace GroupApp.Migrations
                     Establishment = table.Column<string>(nullable: true),
                     Address = table.Column<string>(nullable: true),
                     Time = table.Column<string>(nullable: true),
-                    Thoughts = table.Column<string>(nullable: true)
+                    Thoughts = table.Column<string>(nullable: true),
+                    DateTime = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -34,7 +36,8 @@ namespace GroupApp.Migrations
                     Establishment = table.Column<string>(nullable: true),
                     Address = table.Column<string>(nullable: true),
                     Time = table.Column<string>(nullable: true),
-                    Thoughts = table.Column<string>(nullable: true)
+                    Thoughts = table.Column<string>(nullable: true),
+                    DateTime = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -51,7 +54,8 @@ namespace GroupApp.Migrations
                     Establishment = table.Column<string>(nullable: true),
                     Address = table.Column<string>(nullable: true),
                     Time = table.Column<string>(nullable: true),
-                    Thoughts = table.Column<string>(nullable: true)
+                    Thoughts = table.Column<string>(nullable: true),
+                    DateTime = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
