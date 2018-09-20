@@ -57,7 +57,7 @@ namespace GroupApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Establishment,Address,Time,Thoughts")] SouthLocations southLocations)
+        public async Task<IActionResult> Create([Bind("Id,Name,Establishment,Address,DateTime,Thoughts")] SouthLocations southLocations)
         {
             if (ModelState.IsValid)
             {
@@ -89,7 +89,7 @@ namespace GroupApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Establishment,Address,Time,Thoughts")] SouthLocations southLocations)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Establishment,Address,DateTime,Thoughts")] SouthLocations southLocations)
         {
             if (id != southLocations.Id)
             {

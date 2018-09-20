@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GroupApp.Migrations
 {
-    public partial class Friendzone : Migration
+    public partial class GroupApp : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,10 +14,10 @@ namespace GroupApp.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true),
-                    Establishment = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: false),
+                    Establishment = table.Column<string>(nullable: false),
                     Address = table.Column<string>(nullable: true),
-                    Time = table.Column<string>(nullable: true),
+                    DateTime = table.Column<DateTime>(nullable: false),
                     Thoughts = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -30,10 +31,10 @@ namespace GroupApp.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true),
-                    Establishment = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: false),
+                    Establishment = table.Column<string>(nullable: false),
                     Address = table.Column<string>(nullable: true),
-                    Time = table.Column<string>(nullable: true),
+                    DateTime = table.Column<DateTime>(nullable: false),
                     Thoughts = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -47,10 +48,10 @@ namespace GroupApp.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true),
-                    Establishment = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: false),
+                    Establishment = table.Column<string>(nullable: false),
                     Address = table.Column<string>(nullable: true),
-                    Time = table.Column<string>(nullable: true),
+                    DateTime = table.Column<DateTime>(nullable: false),
                     Thoughts = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
