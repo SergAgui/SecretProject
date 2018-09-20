@@ -1,15 +1,20 @@
-﻿ @model IEnumerable<GroupApp.Models.CentralLocations>
+﻿@model IEnumerable<GroupApp.Models.CentralLocations>
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+    <img src="~/images/CentralAustinPicture.png" alt="ASP.NET" class="img-responsive" />
+</div>
+
+<div>
+    <p>
+        <h4> <a asp-action="Create">Add New Invite</a></h4>
+    </p>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -24,12 +29,19 @@
             </th>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <th>
                 @Html.DisplayNameFor(model => model.DateTime)
             </th>
 =======
             <
 >>>>>>> a0d5ffb9d521ed06ad223332783a39f144db96f2
+=======
+            <th>
+                @Html.DisplayNameFor(model => model.DateTime)
+            </th>
+
+>>>>>>> fb9284e99864479f00fb130461a796798f43899e
             <th>
                 @Html.DisplayNameFor(model => model.Thoughts)
             </th>
@@ -38,18 +50,20 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayNameFor(model => model.Name)
-            </td>
-            <td>
-                @Html.DisplayNameFor(model => model.Establishment)
-            </td>
-            <td>
-                @Html.DisplayNameFor(model => model.Address)
-            </td>
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>
+        @item.Name
+    </td>
+    <td>
+        @item.Establishment
+    </td>
+    <td>
+        @item.Address
+    </td>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             <td>
                 @Html.DisplayNameFor(model => model.DateTime)
@@ -66,6 +80,21 @@
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
+=======
+    <td>
+        @item.DateTime
+    </td>
+
+    <td>
+        @item.Thoughts
+    </td>
+    <td>
+        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+    </td>
+</tr>
+>>>>>>> fb9284e99864479f00fb130461a796798f43899e
 }
     </tbody>
 </table>
