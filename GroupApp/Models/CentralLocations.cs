@@ -8,6 +8,7 @@ namespace GroupApp.Models
 {
     public class CentralLocations
     {
+        
         public int Id { get; set; }
         public string Name { get; set; }
         public string Establishment { get; set; }
