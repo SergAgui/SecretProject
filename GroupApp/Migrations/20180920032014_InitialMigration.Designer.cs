@@ -4,14 +4,16 @@ using GroupApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GroupApp.Migrations
 {
     [DbContext(typeof(GroupAppContext))]
-    partial class GroupAppContextModelSnapshot : ModelSnapshot
+    [Migration("20180920032014_InitialMigration")]
+    partial class InitialMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -28,19 +30,14 @@ namespace GroupApp.Migrations
                     b.Property<string>("Address");
 
                     b.Property<DateTime>("DateTime");
-<<<<<<< HEAD
-=======
 
                     b.Property<string>("Establishment");
->>>>>>> a0d5ffb9d521ed06ad223332783a39f144db96f2
 
-                    b.Property<string>("Establishment")
-                        .IsRequired();
-
-                    b.Property<string>("Name")
-                        .IsRequired();
+                    b.Property<string>("Name");
 
                     b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -56,19 +53,14 @@ namespace GroupApp.Migrations
                     b.Property<string>("Address");
 
                     b.Property<DateTime>("DateTime");
-<<<<<<< HEAD
-=======
 
                     b.Property<string>("Establishment");
->>>>>>> a0d5ffb9d521ed06ad223332783a39f144db96f2
 
-                    b.Property<string>("Establishment")
-                        .IsRequired();
-
-                    b.Property<string>("Name")
-                        .IsRequired();
+                    b.Property<string>("Name");
 
                     b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -84,19 +76,14 @@ namespace GroupApp.Migrations
                     b.Property<string>("Address");
 
                     b.Property<DateTime>("DateTime");
-<<<<<<< HEAD
-=======
 
                     b.Property<string>("Establishment");
->>>>>>> a0d5ffb9d521ed06ad223332783a39f144db96f2
 
-                    b.Property<string>("Establishment")
-                        .IsRequired();
-
-                    b.Property<string>("Name")
-                        .IsRequired();
+                    b.Property<string>("Name");
 
                     b.Property<string>("Thoughts");
+
+                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
