@@ -10,10 +10,11 @@
     <img src="~/images/NorthAustinPicture.png" alt="ASP.NET" class="img-responsive" />
 
 </div>
-
+<div>
 <p>
-    <a asp-action="Create">Add New Invite</a>
+    <h4> <a asp-action="Create">Add New Invite</a></h4>
 </p>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -40,30 +41,30 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                @item.Name
-            </td>
-            <td>
-                @item.Establishment
-            </td>
-            <td>
-                @item.Address
-            </td>
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Establishment
+                </td>
+                <td>
+                    @item.Address
+                </td>
 
-            <td>
-                @item.DateTime
-            </td>
+                <td>
+                    @item.DateTime
+                </td>
 
-            <td>
-                @item.Thoughts
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+                <td>
+                    @item.Thoughts
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>

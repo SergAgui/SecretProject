@@ -28,7 +28,7 @@ namespace GroupApp.Controllers
         [AllowAnonymous]
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Break the Code Monkeys a bannana";
+            ViewData["Message"] = "Break the Code Monkeys a Banana";
 
             return View();
         }
