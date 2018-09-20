@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GroupApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GroupApp.Controllers
 {
@@ -23,6 +24,7 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.SouthLocations.ToListAsync());
@@ -47,6 +49,8 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Create
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public IActionResult Create()
         {
             return View();
@@ -69,6 +73,8 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Edit/5
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -120,6 +126,8 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Delete/5
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

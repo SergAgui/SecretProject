@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GroupApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GroupApp.Controllers
 {
@@ -13,7 +14,7 @@ namespace GroupApp.Controllers
     {
 
         private readonly GroupAppContext _context;
-
+        
         public CentralLocationsController(GroupAppContext context)
 
       
@@ -27,7 +28,7 @@ namespace GroupApp.Controllers
         {
             return View(await _context.CentralLocations.ToListAsync());
         }
-
+        
         // GET: CentralLocations/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -47,6 +48,8 @@ namespace GroupApp.Controllers
         }
 
         // GET: CentralLocations/Create
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public IActionResult Create()
         {
             return View();
@@ -55,6 +58,7 @@ namespace GroupApp.Controllers
         // POST: CentralLocations/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Establishment,Address,Time,Thoughts")] CentralLocations centralLocations)
@@ -69,6 +73,8 @@ namespace GroupApp.Controllers
         }
 
         // GET: CentralLocations/Edit/5
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,6 +93,7 @@ namespace GroupApp.Controllers
         // POST: CentralLocations/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Establishment,Address,Time,Thoughts")] CentralLocations centralLocations)
@@ -120,6 +127,8 @@ namespace GroupApp.Controllers
         }
 
         // GET: CentralLocations/Delete/5
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -138,6 +147,7 @@ namespace GroupApp.Controllers
         }
 
         // POST: CentralLocations/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
