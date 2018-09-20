@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GroupApp.Migrations
 {
     [DbContext(typeof(GroupAppContext))]
-    [Migration("20180919005719_AddedUsers")]
-    partial class AddedUsers
+    [Migration("20180919011817_GroupApp")]
+    partial class GroupApp
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -63,23 +63,6 @@ namespace GroupApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("SouthLocations");
-                });
-
-            modelBuilder.Entity("GroupApp.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("Age");
-
-                    b.Property<string>("First");
-
-                    b.Property<string>("Last");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("User");
                 });
 #pragma warning restore 612, 618
         }
