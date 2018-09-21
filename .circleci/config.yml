@@ -7,7 +7,7 @@ jobs:
     working_directory: ~/SecretProject
     steps:
       - checkout
-      -run:
+      - run:
         name: Debug location
         command: pwd
       - run:
