@@ -15,7 +15,7 @@ namespace GroupApp.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
+                .HasAnnotation("ProductVersion", "2.1.3-rtm-32065")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -28,14 +28,6 @@ namespace GroupApp.Migrations
                     b.Property<string>("Address");
 
                     b.Property<DateTime>("DateTime");
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-                    b.Property<string>("Establishment");
->>>>>>> a0d5ffb9d521ed06ad223332783a39f144db96f2
-=======
->>>>>>> fb9284e99864479f00fb130461a796798f43899e
 
                     b.Property<string>("Establishment")
                         .IsRequired();
@@ -59,14 +51,6 @@ namespace GroupApp.Migrations
                     b.Property<string>("Address");
 
                     b.Property<DateTime>("DateTime");
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-                    b.Property<string>("Establishment");
->>>>>>> a0d5ffb9d521ed06ad223332783a39f144db96f2
-=======
->>>>>>> fb9284e99864479f00fb130461a796798f43899e
 
                     b.Property<string>("Establishment")
                         .IsRequired();
@@ -90,14 +74,6 @@ namespace GroupApp.Migrations
                     b.Property<string>("Address");
 
                     b.Property<DateTime>("DateTime");
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-                    b.Property<string>("Establishment");
->>>>>>> a0d5ffb9d521ed06ad223332783a39f144db96f2
-=======
->>>>>>> fb9284e99864479f00fb130461a796798f43899e
 
                     b.Property<string>("Establishment")
                         .IsRequired();

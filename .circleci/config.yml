@@ -3,7 +3,6 @@ jobs:
   build:
     docker:
       - image: microsoft/dotnet:2.1-sdk
-<<<<<<< HEAD
     working_directory: ~/FinalProject/SecretProject
     working_directory: ~/SecretProject
     steps:
@@ -34,18 +33,13 @@ jobs:
           name: Run tests in test project
           command: dotnet test GroupAppTest/GroupAppTest.csproj
           command: dotnet build
-=======
     working_directory: ~/SecretProject
     steps:
       - checkout
       - run:
-          name: Debug location
-          command: pwd
-      - run:
           name: Restore packages for all projects in solution
-          command: dotnet restore GroupApp   
+          command: dotnet restore    
       - run:
           name: Build all projects in solution
-          command: dotnet build GroupApp
-    
->>>>>>> fb9284e99864479f00fb130461a796798f43899e
+          command: dotnet build 
+

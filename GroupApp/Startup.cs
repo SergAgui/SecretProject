@@ -29,12 +29,12 @@ namespace GroupApp
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddAuthentication();
             var Dbconfig = Configuration.Get<DBconfigClass>();
             var connectionstring = Configuration.GetConnectionString("GroupAppDb");
             var format = string.Format(connectionstring, Dbconfig.Username, Dbconfig.Password);
 
-            //services.AddDbContext<GroupAppContext>(options =>
-            //        options.UseSqlServer(Configuration.GetConnectionString("CentralLocationsContext")));
+            
 
             services.AddDbContext<GroupAppContext>(options =>
                     options.UseSqlServer(format));
