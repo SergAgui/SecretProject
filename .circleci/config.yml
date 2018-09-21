@@ -38,14 +38,12 @@ jobs:
     working_directory: ~/SecretProject
     steps:
       - checkout
-      - run:
-          name: Debug location
-          command: pwd
+
       - run:
           name: Restore packages for all projects in solution
-          command: dotnet restore GroupApp   
+          command: dotnet restore   
       - run:
           name: Build all projects in solution
-          command: dotnet build GroupApp
+          command: dotnet build 
     
 >>>>>>> fb9284e99864479f00fb130461a796798f43899e
