@@ -42,4 +42,9 @@ jobs:
       - run:
           name: Build all projects in solution
           command: dotnet build 
-
+      - run:
+          name: Restore packages for all projects in solution
+          command: dotnet restore   
+      - run:
+          name: Build all projects in solution
+          command: dotnet build

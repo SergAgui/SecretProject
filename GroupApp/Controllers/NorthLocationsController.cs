@@ -45,8 +45,6 @@ namespace GroupApp.Controllers
         }
 
         // GET: NorthLocations/Create
-        
-       
         public IActionResult Create()
         {
             return View();
@@ -70,8 +68,6 @@ namespace GroupApp.Controllers
         }
 
         // GET: NorthLocations/Edit/5
-    
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -124,8 +120,6 @@ namespace GroupApp.Controllers
         }
 
         // GET: NorthLocations/Delete/5
-    
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

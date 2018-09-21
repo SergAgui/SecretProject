@@ -28,18 +28,9 @@
                 @Html.DisplayNameFor(model => model.Address)
             </th>
 
-
             <th>
                 @Html.DisplayNameFor(model => model.DateTime)
             </th>
-
-            <
-
-            <th>
-                @Html.DisplayNameFor(model => model.DateTime)
-            </th>
-
-
             <th>
                 @Html.DisplayNameFor(model => model.Thoughts)
             </th>
@@ -50,7 +41,7 @@
     <tbody>
         @foreach (var item in Model)
         {
-<tr>
+    <tr>
     <td>
         @item.Name
     </td>
@@ -77,6 +68,6 @@
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
-}
-    </tbody>
+        }
+  </tbody>
 </table>

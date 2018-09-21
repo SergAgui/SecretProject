@@ -22,10 +22,8 @@ namespace GroupApp.Models
         public string Address { get; set; }
 
         [Required]
-
         [DisplayName("Date Time")]
         public DateTime DateTime { get; set; }
         public string Thoughts { get; set; }
-
     }
 }

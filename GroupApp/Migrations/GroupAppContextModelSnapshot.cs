@@ -49,7 +49,6 @@ namespace GroupApp.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Address");
-
                     b.Property<DateTime>("DateTime");
 
                     b.Property<string>("Establishment")
@@ -104,7 +103,6 @@ namespace GroupApp.Migrations
 
                     b.ToTable("User");
                 });
-#pragma warning restore 612, 618
         }
     }
 }
