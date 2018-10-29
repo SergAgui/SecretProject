@@ -28,20 +28,9 @@
                 @Html.DisplayNameFor(model => model.Address)
             </th>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             <th>
                 @Html.DisplayNameFor(model => model.DateTime)
             </th>
-=======
-            <
->>>>>>> a0d5ffb9d521ed06ad223332783a39f144db96f2
-=======
-            <th>
-                @Html.DisplayNameFor(model => model.DateTime)
-            </th>
-
->>>>>>> fb9284e99864479f00fb130461a796798f43899e
             <th>
                 @Html.DisplayNameFor(model => model.Thoughts)
             </th>
@@ -52,7 +41,7 @@
     <tbody>
         @foreach (var item in Model)
         {
-<tr>
+    <tr>
     <td>
         @item.Name
     </td>
@@ -63,14 +52,13 @@
         @item.Address
     </td>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             <td>
                 @Html.DisplayNameFor(model => model.DateTime)
             </td>
-=======
+
            
->>>>>>> a0d5ffb9d521ed06ad223332783a39f144db96f2
+
             <td>
                 @Html.DisplayNameFor(model => model.Thoughts)
             </td>
@@ -80,21 +68,6 @@
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
-=======
-    <td>
-        @item.DateTime
-    </td>
-
-    <td>
-        @item.Thoughts
-    </td>
-    <td>
-        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-    </td>
-</tr>
->>>>>>> fb9284e99864479f00fb130461a796798f43899e
-}
-    </tbody>
+        }
+  </tbody>
 </table>
