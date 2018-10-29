@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GroupApp.Migrations
 {
     [DbContext(typeof(GroupAppContext))]
-    [Migration("20180920032014_InitialMigration")]
+    [Migration("20180921001219_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,13 +31,13 @@ namespace GroupApp.Migrations
 
                     b.Property<DateTime>("DateTime");
 
-                    b.Property<string>("Establishment");
+                    b.Property<string>("Establishment")
+                        .IsRequired();
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
                     b.Property<string>("Thoughts");
-
-                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -54,13 +54,13 @@ namespace GroupApp.Migrations
 
                     b.Property<DateTime>("DateTime");
 
-                    b.Property<string>("Establishment");
+                    b.Property<string>("Establishment")
+                        .IsRequired();
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
                     b.Property<string>("Thoughts");
-
-                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 
@@ -77,13 +77,13 @@ namespace GroupApp.Migrations
 
                     b.Property<DateTime>("DateTime");
 
-                    b.Property<string>("Establishment");
+                    b.Property<string>("Establishment")
+                        .IsRequired();
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
                     b.Property<string>("Thoughts");
-
-                    b.Property<string>("Time");
 
                     b.HasKey("Id");
 

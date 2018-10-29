@@ -25,6 +25,8 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Details/5
+       
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -43,8 +45,6 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Create
-        //[Authorize]
-        //[ValidateAntiForgeryToken]
         public IActionResult Create()
         {
             return View();
@@ -53,8 +53,9 @@ namespace GroupApp.Controllers
         // POST: SouthLocations/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Establishment,Address,DateTime,Thoughts")] SouthLocations southLocations)
         {
             if (ModelState.IsValid)
@@ -67,8 +68,6 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Edit/5
-        //[Authorize]
-        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,8 +86,9 @@ namespace GroupApp.Controllers
         // POST: SouthLocations/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Establishment,Address,DateTime,Thoughts")] SouthLocations southLocations)
         {
             if (id != southLocations.Id)
@@ -120,8 +120,6 @@ namespace GroupApp.Controllers
         }
 
         // GET: SouthLocations/Delete/5
-        //[Authorize]
-        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -141,7 +139,8 @@ namespace GroupApp.Controllers
 
         // POST: SouthLocations/Delete/5
         [HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var southLocations = await _context.SouthLocations.FindAsync(id);
