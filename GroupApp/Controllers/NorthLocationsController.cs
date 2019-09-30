@@ -12,7 +12,6 @@ namespace GroupApp.Controllers
         private readonly GroupAppContext _context;
 
         public NorthLocationsController(GroupAppContext context)
-
         {
             _context = context;
         }
