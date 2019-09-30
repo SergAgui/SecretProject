@@ -34,8 +34,6 @@ namespace GroupApp
             var connectionstring = Configuration.GetConnectionString("GroupAppDb");
             var format = string.Format(connectionstring, Dbconfig.Username, Dbconfig.Password);
 
-            
-
             services.AddDbContext<GroupAppContext>(options =>
                     options.UseSqlServer(format));
         }
