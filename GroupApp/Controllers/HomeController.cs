@@ -13,15 +13,13 @@ namespace GroupApp.Controllers
         [AllowAnonymous]
         public IActionResult About()
         {
-            ViewData["Message"] = "Welcome To Friend Zone";
-
             return View();
         }
 
         [AllowAnonymous]
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Break the Code Monkeys a Banana";
+            ViewData["Message"] = "Contact Us with any questions or help:";
 
             return View();
         }

@@ -8,7 +8,7 @@ namespace GroupApp.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            /*migrationBuilder.CreateTable(
+            migrationBuilder.CreateTable(
                 name: "CentralLocations",
                 columns: table => new
                 {
@@ -72,7 +72,7 @@ namespace GroupApp.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_User", x => x.Id);
-                });*/
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
