@@ -6,8 +6,7 @@ namespace GroupApp.Models
 {
     public class UserIdentityContext : IdentityDbContext<IdentityUser>
     {
-        public UserIdentityContext(DbContextOptions<UserIdentityContext> options)
-            : base(options)
+        public UserIdentityContext(DbContextOptions<UserIdentityContext> options) : base(options)
         {
         }
 

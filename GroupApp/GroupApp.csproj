@@ -19,8 +19,4 @@
     <Folder Include="GroupApp\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\images\Friendzone.jpg" />
-  </ItemGroup>
-
 </Project>
