@@ -42,7 +42,7 @@ namespace GroupApp
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             EnsureDatabaseUpdated(app);
-            if (env.IsDevelopment())
+            if (env.IsProduction())
             {
                 app.UseDeveloperExceptionPage();
             }
