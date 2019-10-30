@@ -1,4 +1,7 @@
+using GroupApp.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
+using System.Web.Mvc;
 
 namespace GroupAppTest
 {
@@ -8,6 +11,12 @@ namespace GroupAppTest
         [TestMethod]
         public void TestMethod1()
         {
+            //Arrange
+
+            //Act
+
+            //Assert
+
         }
     }
 }

@@ -28,8 +28,24 @@ body {
     margin: 15px;
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
+/* Phone screen */
+@media screen and (min-width: 576px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* Desktop and Laptop */
+@media screen and (max-width: 992px) {
     /* Hide captions */
     .carousel-caption {
         display: none;

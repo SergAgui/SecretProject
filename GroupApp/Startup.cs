@@ -36,6 +36,7 @@ namespace GroupApp
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             //services.AddDbContext<GroupAppContext>(options =>
             //        options.UseSqlServer(Configuration.GetConnectionString("CentralLocationsContext")));
@@ -43,6 +44,8 @@ namespace GroupApp
             
 >>>>>>> 6179464b43a7ab7f8d81229da833789d51c4dcb8
 
+=======
+>>>>>>> ef36b802bc691654328d4728ff95cd49f1b935b8
             services.AddDbContext<GroupAppContext>(options =>
                     options.UseSqlServer(format));
 >>>>>>> c622da27fa44646ca0c224776bee4f89e26cfcf2
@@ -52,7 +55,7 @@ namespace GroupApp
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             EnsureDatabaseUpdated(app);
-            if (env.IsDevelopment())
+            if (env.IsProduction())
             {
                 app.UseDeveloperExceptionPage();
             }

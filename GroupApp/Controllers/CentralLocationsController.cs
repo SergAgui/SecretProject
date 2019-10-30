@@ -1,9 +1,9 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using GroupApp.Models;
+﻿using GroupApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace GroupApp.Controllers
 {
@@ -12,7 +12,6 @@ namespace GroupApp.Controllers
         private readonly GroupAppContext _context;
 
         public CentralLocationsController(GroupAppContext context)
-
         {
             _context = context;
         }
@@ -66,8 +65,6 @@ namespace GroupApp.Controllers
         }
 
         // GET: CentralLocations/Edit/5
- 
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -120,8 +117,6 @@ namespace GroupApp.Controllers
         }
 
         // GET: CentralLocations/Delete/5
-      
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

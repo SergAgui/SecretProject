@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupApp", "GroupApp\GroupApp.csproj", "{26E2847E-5261-4AA6-B00C-6B4E9806FC62}"
 EndProject
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupAppTest", "GroupAppTest\GroupAppTest.csproj", "{7120A3C7-8B6D-4779-A820-3B1FC9CA1B2D}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupAppTest", "GroupAppTest\GroupAppTest.csproj", "{7120A3C7-8B6D-4779-A820-3B1FC9CA1B2D}"
+>>>>>>> ef36b802bc691654328d4728ff95cd49f1b935b8
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
