@@ -2,10 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>5a73f707-090f-49c4-a85e-3a0eeaed8d71</UserSecretsId>
+    <UserSecretsId>06ddf010-4c90-4088-a89d-c32c600b28ac</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\Friendzone.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\Friendzone.jpg" />
   </ItemGroup>
 
 </Project>
