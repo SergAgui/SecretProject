@@ -85,28 +85,28 @@
 					<li><a asp-area="SouthLocations" asp-controller="SouthLocations" asp-action="Index">South Location</a></li>
 					<li><a asp-area="Home" asp-controller="Home" asp-action="About">About</a></li>
 					<li><a asp-area="Home" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><partial name="_LoginPartial" /></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
     </nav>
 
-	<partial name="_LoginPartial" />
 
 	<div class="container body-content">
 		@RenderBody()
 		<hr />
 		<footer>
-			<p>&copy; 2018 - GroupApp</p>
+			<p>&copy; 2019 - GroupApp</p>
 		</footer>
 	</div>
 
-	<environment include="Production">
+	<environment include="Development">
 		<script src="~/lib/jquery/dist/jquery.js"></script>
 		<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 		<script src="~/js/site.js" asp-append-version="true"></script>
 	</environment>
-	<environment exclude="Production">
+	<environment exclude="Development">
 		<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
 				asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
 				asp-fallback-test="window.jQuery"
